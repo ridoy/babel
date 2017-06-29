@@ -1,0 +1,38 @@
+.annotator-hl {
+  background: rgb(85, 239, 79);!important
+}
+
+p {
+  font-size: 20px;
+}
+
+.nav-sidebar {
+  position: fixed;
+  background-color: black;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.nav-sidebar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-sidebar-toggle {
+  float: right;
+}
+
+.nav-sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.nav-sidebar > span {
+  color: yellow;
+}
+
+.nav-sidebar-button-group > a > button {
+  width: 140px;
+  margin-bottom: 2px;
+}

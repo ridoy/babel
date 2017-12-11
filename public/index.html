@@ -5,24 +5,37 @@
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
 
 <TITLE>
-  /lit/ Reads Notes From The Underground
+  Notes From The Underground
 </TITLE>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<link rel="stylesheet" href="css/annotator.css">
-<script src="js/annotator.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="vendor/css/annotator.css">
+<script src="vendor/js/annotator.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65102306-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 
 <STYLE TYPE="text/css">
 BODY { color: Black;
-       background: #faebd0;
-       font-family: "Times New Roman", serif;
+       background: #ecf4f9;
+       font-family: Garamond, serif;
+         font-weight: 300;
        text-align: justify }
 
 PRE.poem { font-size: small;
-           font-family: "Times New Roman", serif; }
+           font-family: Garamond, serif; }
 
 P {text-indent: 4% }
 
@@ -50,36 +63,12 @@ P.finis { text-align: center ;
 
 <BR><BR>
 <div id="top"></div>
-<center>
-<img height="300px" src="img/schedule.png">
-</center>
-<br>
-  <center>
-<a href="#chap0108">
-<button style="font-size: 40px; color: red;">
-  CLICK HERE TO JUMP TO TODAY'S CHAPTERS
-</button>
-</a>
-  </center>
-<br>
-
-<H2 ALIGN="center">/lit/ reads</H2>
-<H1 ALIGN="center">
-  Notes From The Underground
-</H1>
-
-<H2 ALIGN="center">
-FYODOR DOSTOYEVSKY
-</H2>
-<H4 STYLE="color: red;" ALIGN="center">(vvvvvv you can annotate anywhere on this page! vvvvvv)</H4>
-
-<BR><BR><BR>
 
 <H3 ALIGN="center">
 PART I
 </H3>
 
-<H4>
+<H4 ALIGN="center">
 &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="#chap0101">I</A>
 &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="#chap0102">II</A>
 &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="#chap0103">III</A>
@@ -99,7 +88,7 @@ PART I
 PART II
 </H3>
 
-<H4>
+<H4 ALIGN="center">
 &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="#chap0201">I</A>
 &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="#chap0202">II</A>
 &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="#chap0203">III</A>
@@ -115,29 +104,48 @@ PART II
 </div>
 </H4>
 
+<!-- nav bar on bottom of screen -->
 <div class="nav-sidebar">
+  <a href="javascript:void(0)" class="nav-sidebar-link nav-sidebar-toggle">
+    [ CLOSE THIS ]
+  </a>
   <a href="#top" class="nav-sidebar-link">
     [ JUMP TO TOP ]
   </a>
-  <a href="javascript:void(0)" class="nav-sidebar-link nav-sidebar-toggle">
-    [ X ]
-  </a>
+  <span style="float: right;">
+    You don't have to be quiet.&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
   <span style="display: block;">Jump to chapter by date:</span>
   <div class="nav-sidebar-button-group">
-    <A HREF="#chap0101"><button>Monday June 26</button></A>
-    <A HREF="#chap0103"><button>Tuesday June 27</button></A>
-    <A HREF="#chap0105"><button>Wednesday June 28</button></A>
-    <A HREF="#chap0108"><button>Thursday June 29</button></A>
-    <A HREF="#chap0110"><button>Friday June 30</button></A>
+    <A HREF="#chap0101"><button>Mon June 26</button></A>
+    <A HREF="#chap0103"><button>Tue June 27</button></A>
+    <A HREF="#chap0105"><button>Wed June 28</button></A>
+    <A HREF="#chap0108"><button>Thu June 29</button></A>
+    <A HREF="#chap0110"><button>Fri June 30</button></A>
     <br>
 
-    <A HREF="#chap0201"><button>Saturday July 1</button></A>
-    <A HREF="#chap0203"><button>Sunday July 2</button></A>
-    <A HREF="#chap0205"><button>Monday July 3</button></A>
-    <A HREF="#chap0207"><button>Tuesday July 4</button></A>
-    <A HREF="#chap0209"><button>Wednesday July 5</button></A>
+    <A HREF="#chap0201"><button>Sat July 1</button></A>
+    <A HREF="#chap0203"><button>Sun July 2</button></A>
+    <A HREF="#chap0205"><button>Mon July 3</button></A>
+    <A HREF="#chap0207"><button>Tue July 4</button></A>
+    <A HREF="#chap0209"><button>Wed July 5</button></A>
   </div>
 </div>
+<!-- end nav bar on bottom of screen -->
+
+<!-- View Replies Modal -->
+<div id="modal--view-replies" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End View Replies Modal -->
 
 
 <BR><BR><BR>
@@ -151,7 +159,7 @@ PART I
 
 <div class="container">
 <div class="row">
-<div class="col-md-7 inner">
+<div class="col-xs-7 inner">
 
 
 <P CLASS="intro">
@@ -5525,14 +5533,25 @@ here.]
 </P>
 
 </div>
-<div class="col-md-5 marginalia-container">
+<div class="col-xs-5 marginalia">
 </div >
 </div>
 </div>
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <script src="js/main.js"></script>
 
 </BODY>
 
 </HTML>
+

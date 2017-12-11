@@ -16,8 +16,8 @@ app.get('/', function(req, res) {
 });
 
 /* Route for loading all annotations */
+/*
 app.get('/store/annotations', function(req, res) {
-  console.log(getFormattedDate() + ',' + req.ip + ',' + req.headers['user-agent']);
   searchAnnotations().then(function(data) {
     var rows = [];
     for (var i = 0; i < data.hits.hits.length; i++) {
@@ -27,7 +27,9 @@ app.get('/store/annotations', function(req, res) {
     return res.json(rows);
   });
 });
+*/
 
+/* Route for loading all annotations */
 app.get('/store/search', function(req, res) {
   console.log(getFormattedDate() + ',' + req.ip + ',' + req.headers['user-agent']);
   searchAnnotations().then(function(data) {
@@ -69,6 +71,16 @@ app.post('/store/annotations', function(req, res) {
   });
 });
 
+/* Route for upvoting an annotation */
+app.post('/store/annotations/:id/upvote', function(req, res) {
+
+});
+
+/* Route for downvoting an annotation */
+app.post('/store/annotations/:id/downvote', function(req, res) {
+
+});
+
 function editAnnotationById(id, body) {
   return new Promise(function(resolve, reject) {
     client.update({
@@ -102,6 +114,7 @@ function searchAnnotations() {
 
 function storeAnnotation(ip, body) {
   body.ip = ip; 
+  body.timestamp = Date.now();
   return new Promise(function(resolve, reject) {
     client.index({
       index: 'annotations',

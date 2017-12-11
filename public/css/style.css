@@ -1,5 +1,10 @@
+@font-face {
+  font-family: Garamond;
+  src: url('../font/garamond.tff');
+
+}
 .annotator-hl {
-  background: rgb(85, 239, 79);!important
+  background: #ffcbb5;
 }
 
 p {
@@ -8,7 +13,7 @@ p {
 
 .nav-sidebar {
   position: fixed;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
   bottom: 0;
   right: 0;
@@ -17,6 +22,7 @@ p {
 
 .nav-sidebar-link {
   color: white;
+  float: right;
   text-decoration: none;
 }
 
@@ -35,4 +41,26 @@ p {
 .nav-sidebar-button-group > a > button {
   width: 140px;
   margin-bottom: 2px;
+}
+
+.marginalia__annotation-group {
+  background: #ecf4f9;
+}
+
+.marginalia__reply-box {
+  display: block;
+  width: 100%;
+}
+
+.marginalia__action-area {
+  margin-left: 20px;
+}
+
+/* override bootstrap button css */
+button {
+  line-height: normal;
+}
+
+a:hover {
+  color: red;
 }

@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
+<link rel="canonical" href="http://worldwidebooksociety.com/index.html">
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -70,12 +71,21 @@ P.finis { text-align: center ;
           margin-left: 0% ;
           margin-right: 0% }
 
+          #background-color-select {
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin: 10px 0px 0px 10px;
+        }
 </STYLE>
 
 </HEAD>
 
 <BODY>
-
+  <div id="background-color-select">
+    <span>Select background color: </span><input type="color">
+    <a href="#">[Return to default color]</a>
+  </div>
 <BR><BR>
 <div id="top"></div>
 
@@ -5528,6 +5538,8 @@ here.]
 <br>
 <br>
 <br>
+<script src="../js/cookie-utils.js"></script>
+<script src="../js/colorpicker.js"></script>
 <script src="https://hypothes.is/embed.js" async></script>
 </BODY>
 

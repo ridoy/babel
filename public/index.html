@@ -4,6 +4,7 @@
         <title>
             Worldwide Book Society - Directory
         </title>
+
         <meta property="og:title" content="Worldwide Book Society" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="A community of curious minds interested in reading and discussing the world's great literary works." />
@@ -11,6 +12,7 @@
         <meta property="twitter:title" content="Worldwide Book Society" />
         <meta property="twitter:description" content="A community of curious minds interested in reading and discussing the world's great literary works." />
         <meta property="twitter:image" content="/img/monalisa.png" />
+
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -46,12 +48,24 @@
                   text-indent: 0% ;
                   margin-left: 0% ;
                   margin-right: 0% }
+
+        #background-color-select {
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin: 10px 0px 0px 10px;
+        }
         
     </style>
     <body>
+        <div id="background-color-select">
+            <span>Select background color: </span><input type="color">
+            <a href="#">[Return to default color]</a>
+          </div>
         <h1 align="center">
             Worldwide Book Society
         </h1>
+
         
         <H3 ALIGN="CENTER">
             <a href="https://www.reddit.com/r/worldwidebooksociety" target=”_blank” rel=”noopener noreferrer”>[Visit our community on Reddit]</a>
@@ -66,6 +80,8 @@
         <p><b>Novels:</b></p>
         <p><a href='notes-from-the-underground.html'>Notes from the Undeground (Fyodor Dostoevsky, 1864)</a></p>
     </body>
+    <script src="../js/cookie-utils.js"></script>
+    <script src="../js/colorpicker.js"></script>
     <script src="https://hypothes.is/embed.js" async></script>
 
 </html>

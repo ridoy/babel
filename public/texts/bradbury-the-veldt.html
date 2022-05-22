@@ -108,12 +108,21 @@ P.finis { text-align: center ;
     span.dropcap         { float: left; margin: 0 0.1em 0 0; line-height: 0.8 }
     pre        { font-style: italic; font-size: 90%; margin-left: 10%;}
 
+    #background-color-select {
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin: 10px 0px 0px 10px;
+        }
 </STYLE>
 
 </HEAD>
 
 <BODY>
-
+    <div id="background-color-select">
+        <span>Select background color: </span><input type="color">
+        <a href="#">[Return to default color]</a>
+      </div>
     <Br><br>
         
 <H3 ALIGN="CENTER">
@@ -407,10 +416,10 @@ P.finis { text-align: center ;
 <p>&nbsp; &nbsp; &nbsp;A shadow flickered over Mr. McClean&apos;s hot face. Many shadows flickered.</p>
 <p>The vultures were dropping down the blazing sky.</p>
 <p>&nbsp; &nbsp; &nbsp;&quot;A cup of tea?&quot; asked Wendy in the silence.</p>
-<div title="Page 1">&nbsp;</div>
 
 </BODY>
-
+<script src="../js/cookie-utils.js"></script>
+<script src="../js/colorpicker.js"></script>
   <script src="https://hypothes.is/embed.js" async></script>
 
   </HTML>

@@ -67,12 +67,21 @@ P.finis { text-align: center ;
           margin-left: 0% ;
           margin-right: 0% }
 
+#background-color-select {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 10px 0px 0px 10px;
+}
 </STYLE>
 
 </HEAD>
 
 <BODY>
-
+  <div id="background-color-select">
+    <span>Select background color: </span><input type="color">
+    <a href="#">[Return to default color]</a>
+  </div>
     <Br><br>
         
 <H3 ALIGN="CENTER">
@@ -405,6 +414,8 @@ P.finis { text-align: center ;
     </div>
     </div>
 </BODY>
+<script src="../js/cookie-utils.js"></script>
+<script src="../js/colorpicker.js"></script>
   <script src="https://hypothes.is/embed.js" async></script>
 
   </HTML>
